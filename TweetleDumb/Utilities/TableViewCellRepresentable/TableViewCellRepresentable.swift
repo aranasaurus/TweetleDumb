@@ -12,7 +12,7 @@ protocol TableViewCellRepresentable: TableViewCellViewModel {
     associatedtype TableViewCell: UITableViewCell
 }
 
-extension TableViewCellRepresentable where TableViewCell: Reusable {
+extension TableViewCellRepresentable {
     static func register(with tableView: UITableView) {
         tableView.register(TableViewCell.self, forCellReuseIdentifier: TableViewCell.reuseIdentifier)
     }

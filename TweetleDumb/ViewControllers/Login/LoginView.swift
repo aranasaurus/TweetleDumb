@@ -25,8 +25,8 @@ final class LoginView: UIView {
         let title = NSAttributedString(
             string: "Login",
             attributes: [
-                NSFontAttributeName: UIFont.systemFont(ofSize: 20),
-                NSForegroundColorAttributeName: UIColor.white
+                NSAttributedStringKey.font: UIFont.systemFont(ofSize: 20),
+                NSAttributedStringKey.foregroundColor: UIColor.white
             ]
         )
         button.setAttributedTitle(title, for: .normal)
